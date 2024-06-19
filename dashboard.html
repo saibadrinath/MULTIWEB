@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fitness Tracker - Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body{
+        background-color: rgb(131, 131, 243);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-blue-800 py-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-2xl">Fitness Tracker</h1>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="register.html" class="text-white text-sm"></a>Register</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="dashboard.html" class="text-white text-sm">Dashboard</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </nav>
+    </header>
+  
+    <div class="content">
+      <h1 style="color: red">This is the dashboard page of FITNESS TRACKER.</h1>
+    </div>
+    <br />
+    <main>
+      <h2 style="color: blue">Welcome to Your Dashboard</h2>
+      <section id="activity-section">
+        <br />
+        <h6>Log Your Activity</h6>
+        <br />
+        <br />
+        <form id="activity-form">
+          <label for="activity">Activity:</label>
+          <input
+            type="text"
+            placeholder="Enter Your Activity"
+            id="activity"
+            required
+          />
+
+          <label for="steps">Steps:</label>
+          <input
+            type="number"
+            placeholder="Enter Steps Covered"
+            id="steps"
+            required
+          />
+
+          <label for="calories">Calories Burned:</label>
+          <input
+            type="number"
+            placeholder="Enter Calories Burned"
+            id="calories"
+            required
+          />
+
+          <label for="distance">Distance (km):</label>
+          <input
+            type="number"
+            placeholder="Enter Distance Covered"
+            id="distance"
+            required
+          />
+
+          <button type="submit">Login Activity</button>
+        </script>
+        </form>
+      </section>
+    </main>
+    <br />
+    <section>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="img/img 4.webp"
+              height="400px"
+              width="400px"
+              alt="error"
+            />
+          </td>
+          <td>
+            <img
+              src="img/img 11.avif"
+              height="400px"
+              width="400px"
+              alt="error"
+            />
+          </td>
+          <td>
+            <img
+              src="img/img 2.webp"
+              height="400px"
+              width="400px"
+              alt="error"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <form method="post" action="register.html" id="activity-form">
+      <!-- Form fields here -->
+      <button type="submit" onclick="saveActivity()" >Log Activity</button>
+  </form>
+    <script src="app.js"></script>
+  </body>
+</html>
